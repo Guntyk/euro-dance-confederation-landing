@@ -1,13 +1,40 @@
+@font-face {
+  font-family: "Glametrix";
+  src: url(./materials/font/GlametrixLight.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Glametrix";
+  src: url(./materials/font/Glametrix.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Glametrix";
+  src: url(./materials/font/GlametrixBold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./materials/font/Inter-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./materials/font/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
