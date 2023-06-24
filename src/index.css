@@ -24,6 +24,35 @@
   font-weight: 400;
 }
 
+:root {
+  --pink-hue: 330, 100%;
+  --blue-hue: 236, 39%;
+  --lavender-hue: 236, 28%;
+  --green-hue: 76, 71%;
+
+  /* --principles-pink: 31%;
+  --principles-dark-pink: 27%;
+  --principles-light-pink: 36%;
+
+  --principles-blue: 29%;
+  --principles-dark-blue: 25%;
+  --principles-light-blue: 34%; */
+
+  --pink: #e50074;
+  --white: #f9f9f9;
+  --lavender: #7b7fb5;
+  --green: #96c121;
+  --black: #07070f;
+
+  --light-blue: #424895;
+  --blue: #21244b;
+  --dark-blue: #14162d;
+
+  --light-gray: #ecedf4;
+  --gray: #f3f5f7;
+  --dark-gray: #d9daea;
+}
+
 body {
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
