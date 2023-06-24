@@ -1,0 +1,55 @@
+.stats {
+  padding: 6.25em 0;
+}
+
+.sec-title {
+  font-family: "Glametrix";
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 0.8;
+}
+
+.stats-list {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3em 0;
+  background: var(--blue);
+  border-radius: 10px;
+}
+
+.stats-mark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  text-transform: uppercase;
+}
+
+.stats-mark .number {
+  font-family: "Glametrix";
+  line-height: 80%;
+  font-size: 6em;
+  color: var(--green);
+}
+.stats-mark .description {
+  line-height: 1;
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 0.075em;
+}
+
+.stats-mark:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 6.25em;
+  background: #fff;
+  transform: translateY(-50%);
+}
