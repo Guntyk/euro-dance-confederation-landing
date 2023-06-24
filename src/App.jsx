@@ -1,5 +1,8 @@
+import Button from "./components/common/Button/Button";
+import Input from "./components/common/Input/Input";
+
 // import "./App.css";
 
 export default function App() {
-  return <h1>Bebra</h1>;
+  return <Input labelText="Role" placeholderText="Test text" textarea />;
 }

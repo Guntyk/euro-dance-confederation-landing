@@ -1,0 +1,59 @@
+.label {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Glametrix";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 0.8;
+  color: var(--light-blue);
+}
+
+.label-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label-name .subtitle {
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.input {
+  width: 60%;
+  padding: 16px;
+  font-family: "Inter";
+  font-weight: 500;
+  color: var(--black);
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: 0.15s;
+}
+
+.input:focus {
+  border: 1px solid var(--purple);
+}
+
+.input::placeholder {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.input:invalid {
+  border: 1px solid var(--pink);
+}
+
+textarea.input::-webkit-scrollbar {
+  width: 1px;
+}
+
+textarea.input::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
