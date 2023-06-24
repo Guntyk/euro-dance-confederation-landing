@@ -1,3 +1,4 @@
+import Testimonials from "./components/Testimonials/Testimonials";
 import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
 import Hero from "./components/Hero/Hero";
@@ -9,6 +10,7 @@ export default function App() {
       <main>
         <Hero />
         <Stats />
+        <Testimonials />
       </main>
     </>
   );

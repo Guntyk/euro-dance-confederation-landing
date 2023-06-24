@@ -1,0 +1,35 @@
+.testimonials-list {
+  margin: 3em 0 6.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.testimonials-mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+}
+
+.testimonials-mark .video {
+  margin-bottom: 1.5em;
+  width: 17.625em;
+  height: 31.25em;
+  background: #fff;
+}
+
+.testimonials-mark .name {
+  font-family: "Glametrix";
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.testimonials-mark .role {
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
