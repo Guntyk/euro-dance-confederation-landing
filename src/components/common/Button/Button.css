@@ -1,0 +1,13 @@
+.btn {
+  width: 180px;
+  height: 52px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn.primary {
+  background-color: var(--pink);
+}
+.btn.secondary {
+  background-color: var(--light-blue);
+}
