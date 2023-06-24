@@ -221,3 +221,17 @@ code {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+.sec-title {
+  font-family: "Glametrix";
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 0.8;
+}
+
+.sec-subtitle {
+  color: var(--black);
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: 0.0625em;
+}

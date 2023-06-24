@@ -2,13 +2,6 @@
   padding: 6.25em 0;
 }
 
-.sec-title {
-  font-family: "Glametrix";
-  font-weight: 700;
-  font-size: 4.5em;
-  line-height: 0.8;
-}
-
 .stats-list {
   margin-top: 3em;
   display: flex;
