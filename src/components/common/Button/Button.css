@@ -3,6 +3,7 @@
   height: 52px;
   color: #fff;
   border-radius: 10px;
+  letter-spacing: 0.05em;
 }
 
 .btn.primary {
