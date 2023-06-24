@@ -1,5 +1,5 @@
 .hero {
-  padding: 170px 0 464px;
+  padding: 10.63em 0 29em;
   width: 100%;
   background: url(../../materials/img/world.webp) no-repeat bottom / cover;
 }
@@ -7,7 +7,7 @@
 .title {
   font-family: "Glametrix";
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 6em;
   color: var(--white);
   line-height: 0.8;
 }
@@ -16,7 +16,7 @@
   margin: 100px 0 32px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
