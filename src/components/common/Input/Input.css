@@ -1,6 +1,6 @@
 .label {
   width: 100%;
-  height: 56px;
+  min-height: 56px;
   display: flex;
   justify-content: space-between;
   font-family: "Glametrix";
@@ -8,15 +8,20 @@
   font-size: 3rem;
   line-height: 0.8;
   color: var(--light-blue);
+  /* outline: 1px solid red; */
 }
 
-.label-name {
+.label:not(:nth-child(7)) {
+  align-items: center;
+}
+
+.label-name.subtitled {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* outline: 1px solid lime; */
 }
 
-.label-name .subtitle {
+.label-subtitle {
   font-family: "Inter";
   font-size: 0.875rem;
   font-weight: 500;
@@ -33,7 +38,7 @@
   border: 1px solid var(--dark-gray);
   border-radius: 10px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   transition: 0.15s;
 }
 
@@ -48,6 +53,10 @@
 
 .input:invalid {
   border: 1px solid var(--pink);
+}
+
+textarea.input {
+  min-height: 100px;
 }
 
 textarea.input::-webkit-scrollbar {

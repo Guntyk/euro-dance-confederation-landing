@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
 import Hero from "./components/Hero/Hero";
 import Team from "./components/Team/Team";
+import Form from "./components/Form/Form";
 import Map from "./components/Map/Map";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Team />
         <Principles />
         <Results />
+        <Form />
       </main>
     </>
   );

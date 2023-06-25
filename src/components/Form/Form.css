@@ -1,0 +1,18 @@
+.form-sec {
+  padding: 6.25em;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 4em 6.375em;
+  gap: 2em;
+  border-radius: 10px;
+  border: 2px solid var(--green);
+}
