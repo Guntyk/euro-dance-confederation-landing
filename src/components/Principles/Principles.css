@@ -1,0 +1,163 @@
+.principles {
+  padding: 6.25em 0;
+}
+
+.principles-list {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 36.5em;
+}
+
+.principles-mark {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 2 - 1.5em);
+}
+
+.principles-mark:not(:nth-child(3)) {
+  margin-top: 4em;
+}
+.principles-mark:nth-child(even) {
+  margin-top: calc(4em + 1.5em);
+}
+
+.principles-mark .title {
+  margin-bottom: 0.3333em;
+  color: var(--black);
+  font-size: 3em;
+  font-family: "Glametrix";
+  line-height: 0.8333;
+}
+
+.principles-mark p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+.principles-mark .ending {
+  margin-top: 0.3em;
+}
+
+/* Decoration */
+.principles-mark .decor-wrapper {
+  margin-bottom: 2em;
+  height: 1.5em;
+}
+
+.principles-mark .decor {
+  --gap: 0.5em;
+  display: block;
+  position: relative;
+}
+
+.principles-mark .decor,
+.principles-mark .decor::before,
+.principles-mark .decor::after {
+  border-radius: 50%;
+}
+
+.principles-mark .decor::before,
+.principles-mark .decor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.principles-mark .decor.small {
+  width: 1em;
+  height: 1em;
+}
+.principles-mark .decor.medium {
+  width: 1.25em;
+  height: 1.25em;
+}
+.principles-mark .decor.big {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Colors */
+/* Pink */
+.principles-mark .decor.pink::before,
+.principles-mark .decor.pink::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.principles-mark .decor.pink {
+  background: #b7005d;
+}
+.principles-mark .decor.pink::before {
+  width: 1.25em;
+  height: 1.25em;
+  left: calc(1.5em + var(--gap));
+  background: #a00051;
+}
+.principles-mark .decor.pink::after {
+  width: 1em;
+  height: 1em;
+  left: calc((1.5em + 1.25em) + var(--gap) * 2);
+  background: #890046;
+}
+
+/* Blue */
+.principles-mark .decor.blue {
+  background: #353a77;
+}
+.principles-mark .decor.blue::before {
+  width: 1.5em;
+  height: 1.5em;
+  left: calc(1em + var(--gap));
+  background: #2e3268;
+}
+.principles-mark .decor.blue::after {
+  width: 1.25em;
+  height: 1.25em;
+  left: calc((1em + 1.5em) + var(--gap) * 2);
+  background: #282b59;
+}
+
+/* Lavender */
+.principles-mark .decor.lavender {
+  background: #686daa;
+  transform: translateY(50%);
+}
+.principles-mark .decor.lavender::before {
+  width: 1.25em;
+  height: 1.25em;
+  top: -25%;
+  left: calc(1em + var(--gap));
+  background: #7b7fb5;
+}
+.principles-mark .decor.lavender::after {
+  width: 1.5em;
+  height: 1.5em;
+  top: -50%;
+  left: calc((1em + 1.25em) + var(--gap) * 2);
+  background: #8e91bf;
+}
+
+/* Green */
+.principles-mark .decor.green::before,
+.principles-mark .decor.green::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.principles-mark .decor.green {
+  top: 11%;
+  background: #789a1a;
+}
+.principles-mark .decor.green::before {
+  width: 1em;
+  height: 1em;
+  left: calc(1.25em + var(--gap));
+  background: #698717;
+}
+.principles-mark .decor.green::after {
+  width: 1.5em;
+  height: 1.5em;
+  left: calc((1.25em + 1em) + var(--gap) * 2);
+  background: #5a7414;
+}
