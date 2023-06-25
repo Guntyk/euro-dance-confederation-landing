@@ -1,0 +1,62 @@
+.results {
+  position: relative;
+  padding: 6.25em 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(60px);
+}
+
+.results::before,
+.results::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.results::before {
+  filter: blur(60px);
+  background: url(../../materials/img/logo.svg) no-repeat 30% 40% / 70%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  z-index: -1;
+}
+
+.results::after {
+  background: var(--dark-blue);
+  z-index: -2;
+}
+
+.results-title {
+  color: #fff;
+}
+
+.results-list {
+  margin: 10.25em 0 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-mark {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: calc(100% / 3 - 3em);
+  color: #fff;
+}
+
+.results-mark .title {
+  font-size: 1.5em;
+  font-family: "Inter";
+  line-height: 1.333;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.results-mark p {
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
