@@ -51,6 +51,7 @@ export default function Input({
           className={select ? selectClassNames : inputClassNames}
           type={type || "text"}
           placeholder={placeholderText || ""}
+          name={name || "text"}
         />
       ) : (
         <div className={`input select ${isActive ? "active" : ""}`}>
