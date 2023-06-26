@@ -44,7 +44,6 @@ export default function Input({
         {labelText}
         <span className="label-subtitle">{subtitleText}</span>
       </span>
-
       {!select ? (
         <Tag
           {...props}
@@ -78,6 +77,7 @@ export default function Input({
                         name === "role" ? setRole(option) : setCountry(option);
                         setIsActive(false);
                       }}
+                      key={option}
                     >
                       {option}
                     </div>
@@ -88,6 +88,7 @@ export default function Input({
           )}
         </div>
       )}
+      <span className="required">Required field</span>
     </label>
   );
 }

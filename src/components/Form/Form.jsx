@@ -1,18 +1,17 @@
-import ReactInputMask from "react-input-mask";
+import { createUser } from "../../hooks/useUsers";
+import { countries, roles } from "../../data";
 import Button from "../common/Button/Button";
 import Input from "../common/Input/Input";
-import "./Form.css";
 import { useState } from "react";
-import { createUser } from "../../hooks/useUsers";
+import "./Form.css";
 
 export default function Form() {
   const [submit, setSubmit] = useState(false);
   const [country, setCountry] = useState("");
   const [role, setRole] = useState("");
-  const countryOptions = ["USA", "Ukraine", "Poland", "France"];
-  const roleOptions = ["Dancer", "Coach", "Judge", "Parent", "Other"];
 
   function handleSubmit(e) {
+    console.log(e.target);
     e.preventDefault();
     if (country.length !== 0 && role.length !== 0) {
       const user = {
@@ -48,11 +47,11 @@ export default function Form() {
                 labelText="Country"
                 placeholderText="Choose from the list"
                 name="country"
-                options={countryOptions}
+                id="country"
+                options={countries}
                 setCountry={setCountry}
                 select
                 country={country}
-                required
               />
               <Input
                 labelText="First Name"
@@ -87,11 +86,10 @@ export default function Form() {
                 placeholderText="Choose from the list"
                 subtitleText="You can choose more than one"
                 name="role"
-                options={roleOptions}
+                options={roles}
                 setRole={setRole}
                 select
                 role={role}
-                required
               />
               <Input
                 labelText="Comment"
