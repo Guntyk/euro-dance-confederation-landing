@@ -2,8 +2,13 @@ import ReactInputMask from "react-input-mask";
 import Button from "../common/Button/Button";
 import Input from "../common/Input/Input";
 import "./Form.css";
+import { useState } from "react";
 
 export default function Form() {
+  const [country, setCountry] = useState("");
+  const [role, setRole] = useState("");
+  const countryOptions = ["USA", "Ukraine", "Poland", "France"];
+  const roleOptions = ["Dancer", "Coach", "Judge", "Parent", "Other"];
   return (
     <section className="form-sec">
       <div className="container">
@@ -13,7 +18,10 @@ export default function Form() {
             labelText="Country"
             placeholderText="Choose from the list"
             name="country"
+            options={countryOptions}
+            setCountry={setCountry}
             select
+            country={country}
           />
           <Input labelText="First Name" placeholderText="Text" name="name" />
           <Input labelText="Surname" placeholderText="Text" name="surname" />
@@ -21,8 +29,7 @@ export default function Form() {
             labelText="Phone number"
             placeholderText="Numbers"
             subtitleText="In the format +380987654321"
-            mask="+38 (099) 999-99-99"
-            type="phone"
+            type="tel"
             name="phone"
             phoneMask
           />
@@ -37,7 +44,10 @@ export default function Form() {
             placeholderText="Choose from the list"
             subtitleText="You can choose more than one"
             name="role"
+            options={roleOptions}
+            setRole={setRole}
             select
+            role={role}
           />
           <Input
             labelText="Comment"

@@ -15,10 +15,10 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <Stats />
-        <Testimonials />
+        {/* <Stats /> */}
+        {/* <Testimonials /> */}
         <Map />
-        <Team />
+        {/* <Team /> */}
         <Principles />
         <Results />
         <Form />

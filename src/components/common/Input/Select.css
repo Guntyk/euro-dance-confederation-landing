@@ -1,0 +1,84 @@
+.select {
+  width: 63.4% !important;
+  position: relative;
+  user-select: none;
+}
+
+.select::before {
+  content: url(./arrow.svg);
+  position: absolute;
+  top: 54%;
+  right: 1em;
+  /* outline: 1px solid red; */
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+
+.select.active::before {
+  top: 46%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.select.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select.input {
+  padding: 0;
+  transition: none;
+}
+
+.select .select-btn {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.select-btn .default {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.select .select-content {
+  padding: 0.5em;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
+  max-height: 23.5em;
+  overflow-x: hidden;
+  background: var(--gray);
+  border: 1px solid var(--dark-gray);
+  border-top: 1px solid var(--purple);
+  color: var(--black);
+  line-height: 1.25em;
+  letter-spacing: 0.05em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+}
+
+.select .select-content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.select .select-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--dark-gray);
+}
+
+.select .select-item {
+  padding: 0.5em;
+  border-radius: 10px;
+  background: var(--gray);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.select .select-item:hover {
+  background: var(--light-gray);
+}
