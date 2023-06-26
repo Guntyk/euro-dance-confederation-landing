@@ -60,3 +60,14 @@
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 768px) {
+  .results-list {
+    flex-direction: column;
+    gap: 2.5em;
+    margin: 2.5em 0;
+  }
+  .results-mark {
+    width: unset;
+  }
+}

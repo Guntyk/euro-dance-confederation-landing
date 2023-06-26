@@ -20,3 +20,36 @@
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 1440px) {
+  .hero {
+    padding: 10.63em 0 12.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 10.63em 0 5.94em;
+  }
+  .title {
+    font-size: 4em;
+  }
+  .subtitle {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    padding: 7.75em 0 6.12em;
+  }
+  .subtitle {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    padding: 7.75em 0 2.94em;
+  }
+}
