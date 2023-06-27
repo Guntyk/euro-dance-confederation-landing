@@ -1,5 +1,4 @@
 import Button from "../common/Button/Button";
-import Logo from "../../materials/img/Logo";
 import "./Results.css";
 
 export default function Results() {
