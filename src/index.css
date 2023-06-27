@@ -147,8 +147,8 @@ textarea {
 }
 @font-face {
   font-family: "Glametrix";
-  src: url(./materials/font/GlametrixLight.otf);
-  font-weight: 300;
+  src: url(./materials/font/GlametrixBold.otf);
+  font-weight: 700;
 }
 @font-face {
   font-family: "Glametrix";
@@ -157,8 +157,8 @@ textarea {
 }
 @font-face {
   font-family: "Glametrix";
-  src: url(./materials/font/GlametrixBold.otf);
-  font-weight: 700;
+  src: url(./materials/font/GlametrixLight.otf);
+  font-weight: 300;
 }
 @font-face {
   font-family: "Inter";
@@ -169,6 +169,11 @@ textarea {
   font-family: "Inter";
   src: url(./materials/font/Inter-Regular.ttf);
   font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./materials/font/Inter-Light.ttf);
+  font-weight: 300;
 }
 
 :root {

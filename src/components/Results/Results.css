@@ -1,9 +1,7 @@
 .results {
   position: relative;
-  padding: 6.25em 0;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(60px);
 }
 
 .results::before,
@@ -18,9 +16,9 @@
 }
 
 .results::before {
-  filter: blur(60px);
-  background: url(../../materials/img/logo.svg) no-repeat 30% 40% / 70%;
-  transform: translate(-50%, -50%) rotate(180deg);
+  filter: blur(45px);
+  background: url(../../materials/img/background.svg) no-repeat 70% 40% / 70%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
@@ -62,12 +60,26 @@
 }
 
 @media (max-width: 768px) {
+  .results::before {
+    background: url(../../materials/img/background.svg) no-repeat 30% 40% / 180%;
+  }
   .results-list {
-    flex-direction: column;
-    gap: 2.5em;
-    margin: 2.5em 0;
+    margin: 2.5em 0 3.75em;
   }
   .results-mark {
-    width: unset;
+    width: calc(100% / 3 - 2em);
+    gap: 1em;
+  }
+  .results-mark .title {
+    font-size: 1.25em;
+  }
+  .results-mark p {
+    font-size: 0.875em;
+    font-weight: 300 !important;
+    letter-spacing: 0.04em;
+  }
+  .results-mark .ending {
+    display: block;
+    margin-top: 0.3em;
   }
 }
