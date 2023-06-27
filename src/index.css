@@ -214,6 +214,10 @@ code {
   padding: 0 36px;
 }
 
+.section {
+  padding: 6.25em 0;
+}
+
 .sec-title {
   font-family: "Glametrix";
   font-weight: 700;
@@ -232,5 +236,17 @@ code {
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
+  }
+  .section {
+    padding: 4em 0;
+  }
+  .sec-title {
+    font-size: 3em;
+  }
+  .sec-subtitle {
+    margin-top: 0.5em;
+    display: block;
+    font-size: 1em;
+    max-width: 20em;
   }
 }
