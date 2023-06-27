@@ -207,6 +207,7 @@ code {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 36px;
 }
 
 .sec-title {
@@ -222,4 +223,10 @@ code {
   font-size: 1.25em;
   line-height: 1.4;
   letter-spacing: 0.0625em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
 }

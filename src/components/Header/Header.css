@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 
 .logo {
@@ -29,4 +30,19 @@
 
 .join-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  .join-link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 425px) {
+  .join-link {
+    display: none;
+  }
 }

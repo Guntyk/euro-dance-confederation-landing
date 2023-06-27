@@ -161,3 +161,17 @@
   left: calc((1.25em + 1em) + var(--gap) * 2);
   background: #5a7414;
 }
+
+@media (max-width: 1100px) {
+  .principles-list {
+    flex-wrap: nowrap;
+  }
+  .principles-mark {
+    margin: 0 !important;
+    width: unset;
+  }
+  .principles-list {
+    height: unset;
+    gap: 50px;
+  }
+}

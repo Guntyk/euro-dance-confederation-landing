@@ -1,5 +1,5 @@
 .footer {
-  padding: 6.25em;
+  padding: 6.25em 0;
   background: var(--dark-blue);
 }
 
@@ -8,4 +8,10 @@
   font-size: 1em;
   line-height: 1.25rem;
   letter-spacing: 0.05rem;
+}
+
+@media (max-width: 425px) {
+  .rights {
+    font-size: 0.8125rem;
+  }
 }
