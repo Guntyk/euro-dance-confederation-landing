@@ -1,5 +1,5 @@
 .form-sec {
-  padding: 6.25em;
+  padding: 6.25em 0;
 }
 
 .form-title {
@@ -25,10 +25,10 @@
 
 @media (max-width: 1100px) {
   .form-sec {
-    padding: 1.25em;
+    padding: 6.25em 0;
   }
   .form {
-    padding: 4em 1.375em;
+    padding: 3em 2em;
   }
 }
 
