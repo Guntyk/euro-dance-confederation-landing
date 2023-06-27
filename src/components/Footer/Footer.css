@@ -1,6 +1,6 @@
 .footer {
-  padding: 6.25em 0;
   background: var(--dark-blue);
+  font-weight: 300;
 }
 
 .rights {
@@ -10,8 +10,11 @@
   letter-spacing: 0.05rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.5em 0;
+  }
   .rights {
-    font-size: 0.8125rem;
+    font-size: 0.8125em;
   }
 }

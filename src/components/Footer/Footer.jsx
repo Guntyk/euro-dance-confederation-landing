@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="section footer">
       <div className="container">
         <span className="rights">
           © 2023 European Confederation of Dance Sports
