@@ -29,13 +29,14 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 10.63em 0 5.94em;
+    padding: 10.62em 0 5.94em;
   }
   .title {
     font-size: 4em;
   }
   .subtitle {
-    margin-bottom: 24px;
+    font-size: 1.25em;
+    margin-bottom: 1.25em;
   }
 }
 
