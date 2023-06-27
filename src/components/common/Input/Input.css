@@ -4,12 +4,14 @@
   min-height: 56px;
   display: flex;
   justify-content: space-between;
-  font-family: "Glametrix";
-  font-weight: 700;
-  font-size: 3rem;
   line-height: 0.8;
   color: var(--light-blue);
-  /* outline: 1px solid red; */
+}
+
+.label-name {
+  font-family: "Glametrix";
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .label:not(:nth-child(7)) {
@@ -19,7 +21,6 @@
 .label-name.subtitled {
   display: flex;
   flex-direction: column;
-  /* outline: 1px solid lime; */
 }
 
 .label-subtitle {
