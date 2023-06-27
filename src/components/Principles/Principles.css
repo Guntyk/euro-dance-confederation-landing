@@ -172,4 +172,7 @@
     margin: 0 !important;
     width: unset;
   }
+  .principles-mark:first-child {
+    padding-top: 2em;
+  }
 }
