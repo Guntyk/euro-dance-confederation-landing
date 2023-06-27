@@ -1,7 +1,3 @@
-.principles {
-  padding: 6.25em 0;
-}
-
 .principles-list {
   margin-top: 1.5em;
   display: flex;
@@ -172,7 +168,23 @@
     margin: 0 !important;
     width: unset;
   }
-  .principles-mark:first-child {
+}
+
+@media (max-width: 768px) {
+  .principles-list {
+    margin-top: 0;
+    gap: 0.5em;
+  }
+  .principles-mark {
     padding-top: 2em;
+  }
+  .principles-mark .title {
+    font-size: 2.5em;
+  }
+  .principles-mark p {
+    font-size: 1em;
+  }
+  .principles-mark .decor-wrapper {
+    margin-bottom: 1em;
   }
 }

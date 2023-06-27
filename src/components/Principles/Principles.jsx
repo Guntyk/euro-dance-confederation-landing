@@ -2,7 +2,7 @@ import "./Principles.css";
 
 export default function Principles() {
   return (
-    <section className="principles">
+    <section className="section principles">
       <div className="container">
         <h3 className="sec-title">Our principles</h3>
         <ul className="principles-list">
