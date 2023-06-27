@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="container">
         <h1 className="title">
-          Unified Standarts
+          Unified Standards
           <br />
           for a United Europe
         </h1>
