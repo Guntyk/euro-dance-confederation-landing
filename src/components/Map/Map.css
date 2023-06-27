@@ -1,15 +1,9 @@
 .map {
-  padding-top: 6.25em;
+  padding-bottom: 0;
   background: #fff;
 }
 
 .map-img {
-  margin-top: 1.5em;
+  margin: 1.5em 0 -1px;
   width: 100%;
-}
-
-@media (max-width: 425px) {
-  .sec-title {
-    font-size: 3.5em;
-  }
 }

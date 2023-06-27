@@ -3,7 +3,7 @@ import "./Map.css";
 
 export default function Map() {
   return (
-    <section className="map">
+    <section className="section map">
       <div className="container">
         <h3 className="sec-title">Game all the way</h3>
         <span className="sec-subtitle">
