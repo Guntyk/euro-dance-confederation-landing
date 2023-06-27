@@ -83,3 +83,16 @@
     margin-top: 0.3em;
   }
 }
+
+@media (max-width: 500px) {
+  .results::before {
+    background: url(../../materials/img/background-mobile.svg) no-repeat 40% 100% / 100%;
+  }
+  .results-list {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+  .results-mark {
+    width: auto;
+  }
+}
