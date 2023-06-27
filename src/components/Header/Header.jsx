@@ -10,7 +10,7 @@ export default function Header() {
             <Logo />
             European Confederation of Dance Sports
           </a>
-          <a href="" className="join-link">
+          <a href="#form" className="join-link">
             Join us
           </a>
         </div>

@@ -39,7 +39,7 @@ export default function Form() {
   return (
     <>
       {!submit ? (
-        <section className="form-sec">
+        <section className="section form-sec" id="form">
           <div className="container">
             <h3 className="sec-title form-title">Submit an application</h3>
             <form className="form" onSubmit={handleSubmit}>
@@ -97,6 +97,14 @@ export default function Form() {
                 name="comment"
                 textarea
               />
+              {/* <button
+                className="plus input"
+                onClick={(e) => {
+                  handleClick;
+                }}
+              >
+                +
+              </button> */}
               <Button className="secondary" type="submit" />
             </form>
           </div>
