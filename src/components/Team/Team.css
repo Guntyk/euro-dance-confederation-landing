@@ -1,6 +1,5 @@
 .team {
   position: relative;
-  padding: 6.25em 0;
 }
 
 .team::before {

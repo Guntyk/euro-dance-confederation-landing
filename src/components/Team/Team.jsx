@@ -2,7 +2,7 @@ import "./Team.css";
 
 export default function Team() {
   return (
-    <section className="team">
+    <section className="section team">
       <div className="container">
         <h3 className="sec-title">Our team</h3>
         <ul className="team-list">

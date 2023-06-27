@@ -2,7 +2,7 @@ import "./Stats.css";
 
 export default function Stats() {
   return (
-    <section className="stats">
+    <section className="section stats">
       <div className="container">
         <h3 className="sec-title">Already joined</h3>
         <ul className="stats-list">

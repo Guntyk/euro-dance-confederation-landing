@@ -2,7 +2,7 @@ import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <section className="testimonials">
+    <section className="section testimonials">
       <div className="container">
         <h3 className="sec-title">Testimonials</h3>
         <span className="sec-subtitle">See what they say about us</span>
