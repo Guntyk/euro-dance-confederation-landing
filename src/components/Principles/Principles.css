@@ -166,7 +166,7 @@
   .principles-list {
     flex-wrap: nowrap;
     height: unset;
-    gap: 50px;
+    gap: 2em;
   }
   .principles-mark {
     margin: 0 !important;
