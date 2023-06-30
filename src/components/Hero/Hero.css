@@ -30,6 +30,7 @@
 @media (max-width: 768px) {
   .hero {
     padding: 10.62em 0 5.94em;
+    background: url(../../materials/img/world-mobile.webp) no-repeat center / cover;
   }
   .title {
     font-size: 4em;
