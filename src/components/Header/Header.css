@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 425px) {
+  .logo {
+    font-size: 1.25em;
+  }
   .join-link {
     display: none;
   }
