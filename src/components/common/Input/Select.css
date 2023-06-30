@@ -5,7 +5,7 @@
 }
 
 .select::before {
-  content: url(./arrow.svg);
+  content: url(./media/arrow.svg);
   position: absolute;
   top: 54%;
   right: 1em;
@@ -82,4 +82,9 @@
 
 .select .select-item:hover {
   background: var(--light-gray);
+}
+
+.select-wrapper {
+  display: flex;
+  max-height: 56px;
 }

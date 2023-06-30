@@ -1,3 +1,4 @@
+import { unique } from "../../../hooks/unique";
 import ReactInputMask from "react-input-mask";
 import { useState } from "react";
 import "./Select.css";
@@ -20,6 +21,7 @@ export default function Input({
   setRole,
   setCountry,
   phoneMask,
+  id,
   ...props
 }) {
   const [isActive, setIsActive] = useState(false);
@@ -28,18 +30,8 @@ export default function Input({
   const labelClassNames = "label " + (labelClassName || "");
   const selectClassNames = "select input " + (selectClassName || "");
 
-  function unique(arr) {
-    let result = [];
-    for (let str of arr) {
-      if (!result.includes(str)) {
-        result.push(str);
-      }
-    }
-    return result;
-  }
-
   return (
-    <label className={labelClassNames}>
+    <label className={labelClassNames} id={id}>
       <span className={`label-name ${subtitleText ? "subtitled" : ""}`}>
         {labelText}
         <span className="label-subtitle">{subtitleText}</span>

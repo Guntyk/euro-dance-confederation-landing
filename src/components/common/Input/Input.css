@@ -77,7 +77,7 @@
 }
 
 .input.invalid ~ .required::before {
-  content: url(./danger.svg);
+  content: url(./media/danger.svg);
   position: absolute;
   left: -1em;
 }
@@ -92,4 +92,25 @@ textarea.input::-webkit-scrollbar {
 
 textarea.input::-webkit-scrollbar-thumb {
   background-color: var(--black);
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 63.33%;
+  gap: 1em;
+}
+
+.role-label {
+  align-items: start !important;
+}
+
+.role-select {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .inputs-wrapper {
+    width: 100%;
+  }
 }

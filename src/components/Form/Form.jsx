@@ -1,3 +1,4 @@
+import MultipleInput from "../common/Input/MultipleInput";
 import { createUser } from "../../hooks/useUsers";
 import { countries, roles } from "../../data";
 import Button from "../common/Button/Button";
@@ -81,30 +82,13 @@ export default function Form() {
                 name="email"
                 required
               />
-              <Input
-                labelText="Role"
-                placeholderText="Choose from the list"
-                subtitleText="You can choose more than one"
-                name="role"
-                options={roles}
-                setRole={setRole}
-                select
-                role={role}
-              />
+              <MultipleInput role={role} setRole={setRole} options={roles} />
               <Input
                 labelText="Comment"
                 placeholderText="Text"
                 name="comment"
                 textarea
               />
-              {/* <button
-                className="plus input"
-                onClick={(e) => {
-                  handleClick;
-                }}
-              >
-                +
-              </button> */}
               <Button className="secondary" type="submit" />
             </form>
           </div>
