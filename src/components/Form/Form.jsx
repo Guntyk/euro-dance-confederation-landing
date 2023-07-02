@@ -9,10 +9,10 @@ import "./Form.css";
 export default function Form() {
   const [submit, setSubmit] = useState(false);
   const [country, setCountry] = useState("");
-  const [role, setRole] = useState("");
+  const [role, setRole] = useState([""]);
 
   function handleSubmit(e) {
-    console.log(e.target);
+    console.log(role);
     e.preventDefault();
     if (country.length !== 0 && role.length !== 0) {
       const user = {
@@ -22,10 +22,11 @@ export default function Form() {
           surname: e.target.surname.value.trim(),
           phone: e.target.phone.value.trim(),
           email: e.target.email.value.trim(),
-          role,
+          role: JSON.stringify(role),
           comment: e.target.comment.value.trim(),
         },
       };
+      console.log(user);
       createUser(JSON.stringify(user));
       setSubmit(true);
     } else {
@@ -94,8 +95,8 @@ export default function Form() {
           </div>
         </section>
       ) : (
-        <section className="form-sec">
-          <h3 className="sec-title form-title">Thanks!</h3>
+        <section className="section form-sec">
+          <h3 className="sec-title form-title thanks-title">Thanks!</h3>
         </section>
       )}
     </>

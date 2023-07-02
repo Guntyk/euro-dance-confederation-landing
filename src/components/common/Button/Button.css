@@ -13,7 +13,7 @@
   background-color: var(--light-blue);
 }
 
-.btn.plus {
+.btn.btn-form {
   margin-left: 1.5em;
   width: 4em;
   padding: 0;
@@ -21,14 +21,22 @@
   border: 1px solid var(--dark-gray);
 }
 
-.btn.plus::before {
-  content: url(./plus.svg);
+.btn.btn-form svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1.5em;
-  height: 1.5em;
   transform: translate(-50%, -50%);
+}
+
+.color {
+  transition: 0.2s;
+}
+
+.btn.plus:hover .color {
+  stroke: var(--purple);
+}
+.btn.delete:hover .color {
+  stroke: var(--pink);
 }
 
 @media (max-width: 768px) {

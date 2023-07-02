@@ -13,6 +13,10 @@
   border: 2px solid var(--green);
 }
 
+.thanks-title {
+  text-align: center !important;
+}
+
 @media (max-width: 1440px) {
   .form-title {
     text-align: left;
