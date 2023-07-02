@@ -7,14 +7,22 @@ import { useState } from "react";
 import "./Form.css";
 
 export default function Form() {
+  const [nonValid, setNonValid] = useState(false);
   const [submit, setSubmit] = useState(false);
   const [country, setCountry] = useState("");
   const [role, setRole] = useState([""]);
 
   function handleSubmit(e) {
-    console.log(role);
     e.preventDefault();
-    if (country.length !== 0 && role.length !== 0) {
+    if (
+      e.target.name.value.length !== 0 &&
+      e.target.surname.value.length !== 0 &&
+      e.target.phone.value.length !== 0 &&
+      e.target.email.value.length !== 0 &&
+      country.length !== 0 &&
+      role[0] !== "" &&
+      role[0] !== "Choose from the list"
+    ) {
       const user = {
         data: {
           country,
@@ -32,9 +40,18 @@ export default function Form() {
     } else {
       if (country.length === 0) {
         alert('Fill in the "Country" field');
-      } else if (role.length === 0) {
+      } else if (e.target.name.value.length === 0) {
+        alert('Fill in "Name" field');
+      } else if (e.target.surname.value.length === 0) {
+        alert('Fill in "Surname" field');
+      } else if (e.target.phone.value.length === 0) {
+        alert('Fill in "Phone" field');
+      } else if (e.target.email.value.length === 0) {
+        alert('Fill in "Email" field');
+      } else if (role[0] === "" || role[0] === "Choose from the list") {
         alert('Fill in the "Role" field');
       }
+      setNonValid(true);
     }
   }
 
@@ -54,18 +71,19 @@ export default function Form() {
                 setCountry={setCountry}
                 select
                 country={country}
+                nonValid={nonValid}
               />
               <Input
                 labelText="First Name"
                 placeholderText="Text"
                 name="name"
-                required
+                nonValid={nonValid}
               />
               <Input
                 labelText="Surname"
                 placeholderText="Text"
                 name="surname"
-                required
+                nonValid={nonValid}
               />
               <Input
                 labelText="Phone number"
@@ -74,16 +92,21 @@ export default function Form() {
                 type="tel"
                 name="phone"
                 phoneMask
-                required
+                nonValid={nonValid}
               />
               <Input
                 labelText="e-mail"
                 placeholderText="Text"
                 type="email"
                 name="email"
-                required
+                nonValid={nonValid}
               />
-              <MultipleInput role={role} setRole={setRole} options={roles} />
+              <MultipleInput
+                role={role}
+                setRole={setRole}
+                options={roles}
+                nonValid={nonValid}
+              />
               <Input
                 labelText="Comment"
                 placeholderText="Text"

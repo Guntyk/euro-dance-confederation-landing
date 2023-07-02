@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { unique } from "../../../hooks/unique";
 
-export default function MultipleInput({ role, setRole, options }) {
+export default function MultipleInput({ role, setRole, options, nonValid }) {
   const [isActive, setIsActive] = useState([false]);
 
-  function handleAdd() {
+  function handleAdd(e) {
+    e.preventDefault();
     const selects = [...role, []];
     const active = [...isActive, false];
     setRole(selects);
     setIsActive(active);
   }
 
-  function handleDelete(i) {
+  function handleDelete(e, i) {
+    e.preventDefault();
     const selects = [...role];
     selects.splice(i, 1);
     setRole(selects);
@@ -29,7 +31,14 @@ export default function MultipleInput({ role, setRole, options }) {
   }
 
   return (
-    <div className="label role-label" id="role">
+    <div
+      className={`label role-label ${
+        nonValid && (role[0] === "" || role[0] === "Choose from the list")
+          ? "invalid"
+          : ""
+      }`}
+      id="role"
+    >
       <span className="label-name subtitled">
         Role
         <span className="label-subtitle">You can choose more than one</span>
@@ -41,7 +50,12 @@ export default function MultipleInput({ role, setRole, options }) {
               <div
                 className={`input select ${
                   isActive[i] ? "active" : ""
-                } role-select`}
+                } role-select ${
+                  nonValid &&
+                  (role[0] === "" || role[0] === "Choose from the list")
+                    ? "invalid"
+                    : ""
+                }`}
               >
                 <div
                   className="select-btn"
@@ -88,8 +102,8 @@ export default function MultipleInput({ role, setRole, options }) {
               ) : (
                 <button
                   className="btn btn-form delete"
-                  onClick={() => {
-                    handleDelete(i);
+                  onClick={(e) => {
+                    handleDelete(e, i);
                   }}
                   key={i + 1}
                 >
@@ -100,7 +114,9 @@ export default function MultipleInput({ role, setRole, options }) {
           );
         })}
       </div>
-      <span className="required">Required field</span>
+      {nonValid && (role[0] === "" || role[0] === "Choose from the list") && (
+        <span className="required">Required field</span>
+      )}
     </div>
   );
 }
