@@ -38,19 +38,19 @@ export default function Form() {
       createUser(JSON.stringify(user));
       setSubmit(true);
     } else {
-      if (country.length === 0) {
-        alert('Fill in the "Country" field');
-      } else if (e.target.name.value.length === 0) {
-        alert('Fill in "Name" field');
-      } else if (e.target.surname.value.length === 0) {
-        alert('Fill in "Surname" field');
-      } else if (e.target.phone.value.length === 0) {
-        alert('Fill in "Phone" field');
-      } else if (e.target.email.value.length === 0) {
-        alert('Fill in "Email" field');
-      } else if (role[0] === "" || role[0] === "Choose from the list") {
-        alert('Fill in the "Role" field');
-      }
+      // if (country.length === 0) {
+      //   alert('Fill in the "Country" field');
+      // } else if (e.target.name.value.length === 0) {
+      //   alert('Fill in "Name" field');
+      // } else if (e.target.surname.value.length === 0) {
+      //   alert('Fill in "Surname" field');
+      // } else if (e.target.phone.value.length === 0) {
+      //   alert('Fill in "Phone" field');
+      // } else if (e.target.email.value.length === 0) {
+      //   alert('Fill in "Email" field');
+      // } else if (role[0] === "" || role[0] === "Choose from the list") {
+      //   alert('Fill in the "Role" field');
+      // }
       setNonValid(true);
     }
   }
