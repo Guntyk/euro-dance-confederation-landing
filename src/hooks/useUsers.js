@@ -1,13 +1,10 @@
-import { putUser } from "../api/requests";
+import { putUser } from '../api/requests';
 
 export const createUser = (personObj) => {
   putUser(personObj).then(([createError, createdPerson]) => {
-    if (createdPerson) {
-      // setPeople((prevPeople) => [...prevPeople, createdPerson.data]);
-      alert("Created!");
-    } else {
+    if (createError) {
       console.log(createError);
-      alert("Creating error");
+      alert('Error. Try later');
     }
   });
 };
